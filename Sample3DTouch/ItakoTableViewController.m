@@ -20,9 +20,9 @@
     // 3D Touchに反応するビューを登録（iOS 9以降でforceTouch有り）
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
         if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
-            // 1番目のcellを登録(cellのtag:0)
+            // 1番目のcellを登録
             [self registerForPreviewingWithDelegate:(id)self sourceView:_cell0];
-            // 2番目のcellを登録(cellのtag:1)
+            // 2番目のcellを登録
             [self registerForPreviewingWithDelegate:(id)self sourceView:_cell1];
         }
     }
@@ -38,8 +38,14 @@
 // 3D Touch peek（peekで表示するViewControllerを返却する）
 - (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
-    // cellのtagによりイタコ１かイタコ２のviewControllerを返却する
-    if (previewingContext.sourceView.tag == 0) {
+    // タッチしたcellのrectを設定する
+    NSIndexPath *indexpath = [self.tableView indexPathForRowAtPoint:location];
+    if (indexpath) {
+        previewingContext.sourceRect = [self.tableView rectForRowAtIndexPath:indexpath];
+    }
+    
+    // イタコ１かイタコ２のviewControllerを返却する
+    if (previewingContext.sourceView == _cell0) {
         return [self.storyboard instantiateViewControllerWithIdentifier:@"view0"];
     } else {
         return [self.storyboard instantiateViewControllerWithIdentifier:@"view1"];
@@ -49,8 +55,8 @@
 // 3D Touch pop（pop先のViewControllerに遷移する）
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
-    // cellのtagによりイタコ１かイタコ２の詳細画面に遷移する
-    if (previewingContext.sourceView.tag == 0) {
+    // イタコ１かイタコ２の詳細画面に遷移する
+    if (previewingContext.sourceView == _cell0) {
         [self performSegueWithIdentifier:@"showView0" sender:nil];
     } else {
         [self performSegueWithIdentifier:@"showView1" sender:nil];
