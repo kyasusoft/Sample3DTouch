@@ -22,15 +22,18 @@
 // 3Dタッチの圧力
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    UITouch *touch = [[event allTouches] anyObject];
+    UITouch *touch = touches.allObjects[0];
     
-    double force = touch.force;
-    double max = touch.maximumPossibleForce;
-    double level = 0;
-    if (max != 0 ) level = force/max;
-    NSLog(@"touchesMoved Max:%f Force:%f level:%f",max,force,force/max);
-    
-    _imageView.alpha = 1.0 - force / max;
+    // イメージの透明度変更（iOS 9以降でforceTouch有り）
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+
+            double force = touch.force;
+            double max   = touch.maximumPossibleForce;
+            // 押した時に透明度を下げる
+            _imageView.alpha = 1.0 - force / max;
+        }
+    }
 }
 
 @end

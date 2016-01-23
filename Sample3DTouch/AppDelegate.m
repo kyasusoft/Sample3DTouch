@@ -42,15 +42,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-// ショートカットアイテムから来た時
+#pragma mark - ショートカットアイテムから起動した時に呼ばれるdelegete
+
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
 {
     if ([shortcutItem.type isEqualToString:@"com.kyasusoft.kiritan"]) {
-        // きりたんのノーティフィケーション
+        // きりたんのノーティフィケーションをポストする
         NSNotification* n = [NSNotification notificationWithName:@"goKiritan" object:self];
         [[NSNotificationCenter defaultCenter] postNotification:n];
     } else {
-        // イタコ姉さんのノーティフィケーション
+        // イタコ姉さんのノーティフィケーションのポストする
         NSNotification* n = [NSNotification notificationWithName:@"goItako" object:self];
         [[NSNotificationCenter defaultCenter] postNotification:n];
     }

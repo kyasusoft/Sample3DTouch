@@ -18,6 +18,8 @@
 		41A0FF191C523B8600EB4CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF171C523B8600EB4CC7 /* Main.storyboard */; };
 		41A0FF1B1C523B8600EB4CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF1A1C523B8600EB4CC7 /* Assets.xcassets */; };
 		41A0FF1E1C523B8600EB4CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF1C1C523B8600EB4CC7 /* LaunchScreen.storyboard */; };
+		41EC7A5B1C5332E100FC8DF8 /* Itako1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7A5A1C5332E100FC8DF8 /* Itako1ViewController.m */; };
+		41EC7A5E1C53335900FC8DF8 /* Itako2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EC7A5D1C53335900FC8DF8 /* Itako2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		41A0FF1A1C523B8600EB4CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A0FF1D1C523B8600EB4CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A0FF1F1C523B8600EB4CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EC7A591C5332E100FC8DF8 /* Itako1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itako1ViewController.h; sourceTree = "<group>"; };
+		41EC7A5A1C5332E100FC8DF8 /* Itako1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itako1ViewController.m; sourceTree = "<group>"; };
+		41EC7A5C1C53335900FC8DF8 /* Itako2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itako2ViewController.h; sourceTree = "<group>"; };
+		41EC7A5D1C53335900FC8DF8 /* Itako2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itako2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,10 @@
 			children = (
 				413087D91C5262FB00FA822D /* ItakoTableViewController.h */,
 				413087DA1C5262FB00FA822D /* ItakoTableViewController.m */,
+				41EC7A591C5332E100FC8DF8 /* Itako1ViewController.h */,
+				41EC7A5A1C5332E100FC8DF8 /* Itako1ViewController.m */,
+				41EC7A5C1C53335900FC8DF8 /* Itako2ViewController.h */,
+				41EC7A5D1C53335900FC8DF8 /* Itako2ViewController.m */,
 			);
 			name = "イタコTableView";
 			sourceTree = "<group>";
@@ -204,9 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				413087D21C525D0A00FA822D /* TabBarController.m in Sources */,
+				41EC7A5B1C5332E100FC8DF8 /* Itako1ViewController.m in Sources */,
 				41A0FF131C523B8600EB4CC7 /* AppDelegate.m in Sources */,
 				41A0FF101C523B8600EB4CC7 /* main.m in Sources */,
 				413087DB1C5262FB00FA822D /* ItakoTableViewController.m in Sources */,
+				41EC7A5E1C53335900FC8DF8 /* Itako2ViewController.m in Sources */,
 				413087D51C52626300FA822D /* KiritanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sample3DTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kyasusoft.com.Sample3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Sample3DTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kyasusoft.com.Sample3DTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

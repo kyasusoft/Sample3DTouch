@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="21" id="sAS-Qi-iQn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiritan_tou.png" translatesAutoresizingMaskIntoConstraints="NO" id="LZS-wc-OX3">
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807.5" y="-60.5"/>
+            <point key="canvasLocation" x="783.5" y="-6.5"/>
         </scene>
         <!--イタコ姉さん-->
         <scene sceneID="YpS-Qr-f2u">
@@ -128,12 +128,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPQ-qd-a3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357.5" y="714.5"/>
+            <point key="canvasLocation" x="1275.5" y="748.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Itako2 View Controller-->
         <scene sceneID="qVa-cf-WTd">
             <objects>
-                <viewController storyboardIdentifier="view1" id="tyg-u6-Dun" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view1" id="tyg-u6-Dun" customClass="Itako2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b3J-a8-t0b"/>
                         <viewControllerLayoutGuide type="bottom" id="lHn-Pa-dTc"/>
@@ -158,12 +158,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTY-3u-sQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.5" y="1200.5"/>
+            <point key="canvasLocation" x="1785.5" y="1146.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Itako1 View Controller-->
         <scene sceneID="Fci-CJ-D5c">
             <objects>
-                <viewController storyboardIdentifier="view0" id="PFW-4u-UPb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view0" id="PFW-4u-UPb" customClass="Itako1ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BPG-3z-7V1"/>
                         <viewControllerLayoutGuide type="bottom" id="LNR-dZ-BdR"/>
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lf-sJ-MWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.5" y="398.5"/>
+            <point key="canvasLocation" x="1785.5" y="384.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Yc8-os-9mZ">
@@ -226,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGc-M2-x92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807.5" y="708.5"/>
+            <point key="canvasLocation" x="783.5" y="748.5"/>
         </scene>
     </scenes>
     <resources>

@@ -17,24 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-    // ショートカットアイテムから来た時
+    // ショートカットアイテムから来た時のオブザーバー登録
     NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     
-    [nc addObserver:self
-           selector:@selector(kiritan)
-               name:@"goKiritan"
-             object:nil];
-
-    [nc addObserver:self
-           selector:@selector(itako)
-               name:@"goItako"
-             object:nil];
+    [nc addObserver:self selector:@selector(kiritan) name:@"goKiritan" object:nil];
+    [nc addObserver:self selector:@selector(itako)   name:@"goItako"   object:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,18 +31,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc
+{
+    // オブザーバー削除
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - タブ選択
+
 // きりたんのタブを選択
 - (void)kiritan
 {
-    UIViewController *vc = self.viewControllers[0];
-    self.selectedViewController = vc;
+    self.selectedViewController = self.viewControllers[0];
 }
 
 // イタコ姉さんのタブを選択
 - (void)itako
 {
-    UINavigationController *nc = self.viewControllers[1];
-    self.selectedViewController = nc;
+    self.selectedViewController = self.viewControllers[1];
 }
 
 @end

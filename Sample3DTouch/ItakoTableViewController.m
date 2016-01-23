@@ -17,11 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 3D Touchに対応するビューを登録
+    // 3D Touchに反応するビューを登録（iOS 9以降でforceTouch有り）
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
-        // iOS 9 以降
         if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+            // 1番目のcellを登録(cellのtag:0)
             [self registerForPreviewingWithDelegate:(id)self sourceView:_cell0];
+            // 2番目のcellを登録(cellのtag:1)
             [self registerForPreviewingWithDelegate:(id)self sourceView:_cell1];
         }
     }
@@ -32,36 +33,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-// 3D Touch peek
+#pragma mark - 3D Touch delegate
+
+// 3D Touch peek（peekで表示するViewControllerを返却する）
 - (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
-    previewingContext.sourceRect = CGRectMake(0, 0, previewingContext.sourceView.frame.size.width, previewingContext.sourceView.frame.size.height);
-    
-    NSInteger tag = previewingContext.sourceView.tag;
-    
-    UIViewController *vc;
-
-    if (tag == 0) {
-        // イタコ１
-        vc = [self.storyboard instantiateViewControllerWithIdentifier:@"view0"];
+    // cellのtagによりイタコ１かイタコ２のviewControllerを返却する
+    if (previewingContext.sourceView.tag == 0) {
+        return [self.storyboard instantiateViewControllerWithIdentifier:@"view0"];
     } else {
-        // イタコ２
-        vc = [self.storyboard instantiateViewControllerWithIdentifier:@"view1"];
+        return [self.storyboard instantiateViewControllerWithIdentifier:@"view1"];
     }
-    
-    return vc;
 }
 
-// 3D Touch pop
+// 3D Touch pop（pop先のViewControllerに遷移する）
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
-    NSInteger tag = previewingContext.sourceView.tag;
-    
-    if (tag == 0) {
-        // イタコ１
+    // cellのtagによりイタコ１かイタコ２の詳細画面に遷移する
+    if (previewingContext.sourceView.tag == 0) {
         [self performSegueWithIdentifier:@"showView0" sender:nil];
     } else {
-        // イタコ２
         [self performSegueWithIdentifier:@"showView1" sender:nil];
     }
 }
