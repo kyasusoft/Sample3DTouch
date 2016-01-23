@@ -29,12 +29,22 @@
 // プレビューアクションを登録
 - (NSArray <id <UIPreviewActionItem>> *)previewActionItems
 {
-    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"等身　イタコ姉さん"
+    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@"Default"
                                                           style:UIPreviewActionStyleDefault
                                                         handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
                                                             NSLog(@"action1 selected.");
                                                         }];
-    return @[action1];
+    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@"Selected"
+                                                          style:UIPreviewActionStyleSelected
+                                                        handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+                                                            NSLog(@"action2 selected.");
+                                                        }];
+    UIPreviewAction *action3 = [UIPreviewAction actionWithTitle:@"Destructive"
+                                                          style:UIPreviewActionStyleDestructive
+                                                        handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+                                                            NSLog(@"action3 selected.");
+                                                        }];
+    return @[action1, action2, action3];
 }
 
 @end

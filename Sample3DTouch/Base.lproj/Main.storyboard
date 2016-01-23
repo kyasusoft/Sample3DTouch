@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="1275.5" y="748.5"/>
         </scene>
-        <!--Itako2 View Controller-->
+        <!--View Controller-->
         <scene sceneID="qVa-cf-WTd">
             <objects>
-                <viewController storyboardIdentifier="view1" id="tyg-u6-Dun" customClass="Itako2ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view1" id="tyg-u6-Dun" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b3J-a8-t0b"/>
                         <viewControllerLayoutGuide type="bottom" id="lHn-Pa-dTc"/>
