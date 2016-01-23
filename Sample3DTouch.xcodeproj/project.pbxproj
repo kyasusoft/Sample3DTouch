@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413087D21C525D0A00FA822D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413087D11C525D0A00FA822D /* TabBarController.m */; };
+		413087D51C52626300FA822D /* KiritanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413087D41C52626300FA822D /* KiritanViewController.m */; };
+		413087DB1C5262FB00FA822D /* ItakoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413087DA1C5262FB00FA822D /* ItakoTableViewController.m */; };
+		413087DF1C526C0800FA822D /* kiritan_tou.png in Resources */ = {isa = PBXBuildFile; fileRef = 413087DC1C526C0800FA822D /* kiritan_tou.png */; };
+		413087E01C526C0800FA822D /* zzm_a1zunko21.png in Resources */ = {isa = PBXBuildFile; fileRef = 413087DD1C526C0800FA822D /* zzm_a1zunko21.png */; };
+		413087E11C526C0800FA822D /* zzm_itako_standup.png in Resources */ = {isa = PBXBuildFile; fileRef = 413087DE1C526C0800FA822D /* zzm_itako_standup.png */; };
 		41A0FF101C523B8600EB4CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FF0F1C523B8600EB4CC7 /* main.m */; };
 		41A0FF131C523B8600EB4CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FF121C523B8600EB4CC7 /* AppDelegate.m */; };
-		41A0FF161C523B8600EB4CC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A0FF151C523B8600EB4CC7 /* ViewController.m */; };
 		41A0FF191C523B8600EB4CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF171C523B8600EB4CC7 /* Main.storyboard */; };
 		41A0FF1B1C523B8600EB4CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF1A1C523B8600EB4CC7 /* Assets.xcassets */; };
 		41A0FF1E1C523B8600EB4CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0FF1C1C523B8600EB4CC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		413087D11C525D0A00FA822D /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		413087D31C52626300FA822D /* KiritanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KiritanViewController.h; sourceTree = "<group>"; };
+		413087D41C52626300FA822D /* KiritanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiritanViewController.m; sourceTree = "<group>"; };
+		413087D91C5262FB00FA822D /* ItakoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItakoTableViewController.h; sourceTree = "<group>"; };
+		413087DA1C5262FB00FA822D /* ItakoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItakoTableViewController.m; sourceTree = "<group>"; };
+		413087DC1C526C0800FA822D /* kiritan_tou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kiritan_tou.png; path = image/kiritan_tou.png; sourceTree = "<group>"; };
+		413087DD1C526C0800FA822D /* zzm_a1zunko21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zzm_a1zunko21.png; path = image/zzm_a1zunko21.png; sourceTree = "<group>"; };
+		413087DE1C526C0800FA822D /* zzm_itako_standup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zzm_itako_standup.png; path = image/zzm_itako_standup.png; sourceTree = "<group>"; };
+		413087E31C526F6300FA822D /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		41A0FF0B1C523B8600EB4CC7 /* Sample3DTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample3DTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0FF0F1C523B8600EB4CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41A0FF111C523B8600EB4CC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41A0FF121C523B8600EB4CC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41A0FF141C523B8600EB4CC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41A0FF151C523B8600EB4CC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		41A0FF181C523B8600EB4CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41A0FF1A1C523B8600EB4CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41A0FF1D1C523B8600EB4CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +51,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413087E21C526C1700FA822D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				413087DC1C526C0800FA822D /* kiritan_tou.png */,
+				413087DD1C526C0800FA822D /* zzm_a1zunko21.png */,
+				413087DE1C526C0800FA822D /* zzm_itako_standup.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		413087E41C527A6B00FA822D /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				413087E31C526F6300FA822D /* TabBarController.h */,
+				413087D11C525D0A00FA822D /* TabBarController.m */,
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
+		413087E51C527A8700FA822D /* きりたんView */ = {
+			isa = PBXGroup;
+			children = (
+				413087D31C52626300FA822D /* KiritanViewController.h */,
+				413087D41C52626300FA822D /* KiritanViewController.m */,
+			);
+			name = "きりたんView";
+			sourceTree = "<group>";
+		};
+		413087E61C527A9E00FA822D /* イタコTableView */ = {
+			isa = PBXGroup;
+			children = (
+				413087D91C5262FB00FA822D /* ItakoTableViewController.h */,
+				413087DA1C5262FB00FA822D /* ItakoTableViewController.m */,
+			);
+			name = "イタコTableView";
+			sourceTree = "<group>";
+		};
 		41A0FF021C523B8600EB4CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +107,13 @@
 		41A0FF0D1C523B8600EB4CC7 /* Sample3DTouch */ = {
 			isa = PBXGroup;
 			children = (
+				41A0FF171C523B8600EB4CC7 /* Main.storyboard */,
 				41A0FF111C523B8600EB4CC7 /* AppDelegate.h */,
 				41A0FF121C523B8600EB4CC7 /* AppDelegate.m */,
-				41A0FF141C523B8600EB4CC7 /* ViewController.h */,
-				41A0FF151C523B8600EB4CC7 /* ViewController.m */,
-				41A0FF171C523B8600EB4CC7 /* Main.storyboard */,
+				413087E41C527A6B00FA822D /* TabView */,
+				413087E51C527A8700FA822D /* きりたんView */,
+				413087E61C527A9E00FA822D /* イタコTableView */,
 				41A0FF1A1C523B8600EB4CC7 /* Assets.xcassets */,
-				41A0FF1C1C523B8600EB4CC7 /* LaunchScreen.storyboard */,
-				41A0FF1F1C523B8600EB4CC7 /* Info.plist */,
 				41A0FF0E1C523B8600EB4CC7 /* Supporting Files */,
 			);
 			path = Sample3DTouch;
@@ -74,6 +122,9 @@
 		41A0FF0E1C523B8600EB4CC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41A0FF1C1C523B8600EB4CC7 /* LaunchScreen.storyboard */,
+				41A0FF1F1C523B8600EB4CC7 /* Info.plist */,
+				413087E21C526C1700FA822D /* image */,
 				41A0FF0F1C523B8600EB4CC7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +190,9 @@
 				41A0FF1E1C523B8600EB4CC7 /* LaunchScreen.storyboard in Resources */,
 				41A0FF1B1C523B8600EB4CC7 /* Assets.xcassets in Resources */,
 				41A0FF191C523B8600EB4CC7 /* Main.storyboard in Resources */,
+				413087DF1C526C0800FA822D /* kiritan_tou.png in Resources */,
+				413087E11C526C0800FA822D /* zzm_itako_standup.png in Resources */,
+				413087E01C526C0800FA822D /* zzm_a1zunko21.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A0FF161C523B8600EB4CC7 /* ViewController.m in Sources */,
+				413087D21C525D0A00FA822D /* TabBarController.m in Sources */,
 				41A0FF131C523B8600EB4CC7 /* AppDelegate.m in Sources */,
 				41A0FF101C523B8600EB4CC7 /* main.m in Sources */,
+				413087DB1C5262FB00FA822D /* ItakoTableViewController.m in Sources */,
+				413087D51C52626300FA822D /* KiritanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +354,7 @@
 				41A0FF241C523B8600EB4CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

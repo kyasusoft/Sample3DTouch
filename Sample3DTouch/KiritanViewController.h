@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  KiritanViewController.h
 //  Sample3DTouch
 //
 //  Created by kyasu on 2016/01/22.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface KiritanViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
-
