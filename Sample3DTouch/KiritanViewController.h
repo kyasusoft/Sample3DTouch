@@ -12,4 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *maxLabel;
+@property (weak, nonatomic) IBOutlet UILabel *forceLabel;
+
 @end

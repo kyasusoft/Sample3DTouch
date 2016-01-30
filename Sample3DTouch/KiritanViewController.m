@@ -32,6 +32,9 @@
             double max   = touch.maximumPossibleForce;
             // 押した時に透明度を下げる
             _imageView.alpha = 1.0 - force / max;
+            
+            _forceLabel.text = [NSString stringWithFormat:@"%0.2f", force];
+            _maxLabel.text   = [NSString stringWithFormat:@"%0.2f", max];
         }
     }
 }
