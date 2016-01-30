@@ -55,12 +55,15 @@
 // 3D Touch pop（pop先のViewControllerに遷移する）
 - (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
+    // ぽよんのアニメーションが付く
+    [self.navigationController pushViewController:viewControllerToCommit animated:YES];
+
     // イタコ１かイタコ２の詳細画面に遷移する
-    if (previewingContext.sourceView == _cell0) {
-        [self performSegueWithIdentifier:@"showView0" sender:nil];
-    } else {
-        [self performSegueWithIdentifier:@"showView1" sender:nil];
-    }
+//    if (previewingContext.sourceView == _cell0) {
+//        [self performSegueWithIdentifier:@"showView0" sender:nil];
+//    } else {
+//        [self performSegueWithIdentifier:@"showView1" sender:nil];
+//    }
 }
 
 @end
